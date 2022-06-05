@@ -2,7 +2,7 @@
 # >>> Escriba el codigo del mapper a partir de este punto <<<
 #
 import sys
-import csv
+
 if __name__ == "__main__":
 
     #
@@ -14,9 +14,7 @@ if __name__ == "__main__":
     for row in sys.stdin:
         dividir = row.split(",")
         segundaCol = dividir[2]
-        if segundaCol == "credit_history":
-            continue
-        else:
+   
         
         
         #print(segundaCol)
@@ -31,4 +29,4 @@ if __name__ == "__main__":
         # escribe al flujo estandar de salida
         #for word in segundaCol:
 
-            sys.stdout.write("{}\t1\n".format(segundaCol))
+        sys.stdout.write("{}\t1\n".format(segundaCol))
