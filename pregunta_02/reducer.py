@@ -1,8 +1,6 @@
 #
 # >>> Escriba el codigo del reducer a partir de este punto <<<
 #
-
-from pickletools import markobject
 import sys
 
 #
@@ -32,7 +30,7 @@ if __name__ == '__main__':
             if val > max:
                 max = val
                 total = val
-            elif max > val:
+            else:
                 val = max
                 total = val
             #total += val

@@ -12,7 +12,7 @@ if __name__ == "__main__":
    
     #for line in sys.stdin:
     for row in sys.stdin:
-        dividir = row.split(",")
+        dividir = row.split(",") 
         segundaCol = dividir[2]
    
         
