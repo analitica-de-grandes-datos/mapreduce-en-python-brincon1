@@ -16,7 +16,8 @@ if __name__ == '__main__':
     # cada linea de texto recibida es una entrada clave \tabulador valor
     #
     for line in sys.stdin:  
-        division = line.replace(" ", "").split("\t")
+        division = line.replace("\n", "").split("\t")
+        #print(division)
         key = division[0]
         valor = division[1]
         dict[key] = valor
@@ -27,4 +28,4 @@ if __name__ == '__main__':
 
         
         
-        sys.stdout.write("{}\t{}\n".format(linea[0], linea[1]))
+        sys.stdout.write("{},{}\n".format(linea[0], linea[1]))

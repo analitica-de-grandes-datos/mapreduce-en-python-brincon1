@@ -13,13 +13,10 @@ if __name__ == "__main__":
    
     #for line in sys.stdin:
     for row in sys.stdin:
-        
-        reemplazo = row.replace("\r", "").replace("\n", "")
+     
+        reemplazo = row.replace("\r", "")
        
         letra, numero = reemplazo.split(",")
-        
-        
-
         #
         # genera las tuplas palabra \tabulador 1
         # ya que es un conteo de palabras
@@ -30,4 +27,4 @@ if __name__ == "__main__":
         # escribe al flujo estandar de salida
     
 
-        sys.stdout.write(f"{letra}\t {numero}\n")
+        sys.stdout.write(f"{letra}\t{numero}")
