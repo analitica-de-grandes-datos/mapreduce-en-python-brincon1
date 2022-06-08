@@ -15,14 +15,11 @@ if __name__ == '__main__':
     #
     # cada linea de texto recibida es una entrada clave \tabulador valor
     #
-    for line in sys.stdin:  
-        division = line.replace("\n", "").split("\t")
-        #print(division)
-        key = division[0]
-        valor = division[1]
+    for line in sys.stdin: 
+        key, valor = line.split("\t")
+        valor = int(valor)
         dict[key] = valor
-    
-      
+          
     sortedDict = sorted(dict.items(), key=operator.itemgetter(1))
     for linea in sortedDict:
 

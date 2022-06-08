@@ -18,10 +18,9 @@ if __name__ == '__main__':
     for line in sys.stdin:
         
         key, val = line.split("\t")
-        
+
         val = int(val)
-        
-        
+              
         if key == curkey:
             #
             # No se ha cambiado de clave. Aca se acumulan los valores para la misma

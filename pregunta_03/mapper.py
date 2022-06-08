@@ -1,8 +1,9 @@
 #
 # >>> Escriba el codigo del mapper a partir de este punto <<<
 #
-from __future__ import division
 import sys
+
+
 
 if __name__ == "__main__":
 
@@ -10,21 +11,13 @@ if __name__ == "__main__":
     # itera sobre cada linea de codigo recibida
     # a traves del flujo de entrada
     #
-   
-    #for line in sys.stdin:
+
     for row in sys.stdin:
-     
-        reemplazo = row.replace("\r", "")
-       
-        letra, numero = reemplazo.split(",")
-        #
-        # genera las tuplas palabra \tabulador 1
-        # ya que es un conteo de palabras
-        #
-    
+        # limpio los espacios en blanco al final
+        limpiarLinea = row.strip()
+        
+        #divido por por coma y obtengo las dos columnas que me interan       
+        letra, numero = limpiarLinea.split(",") 
 
-        #
         # escribe al flujo estandar de salida
-    
-
-        sys.stdout.write(f"{letra}\t{numero}")
+        sys.stdout.write(f"{letra}\t{numero}\n")

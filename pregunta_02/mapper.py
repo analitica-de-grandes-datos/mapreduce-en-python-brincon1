@@ -29,4 +29,4 @@ if __name__ == "__main__":
         # escribe al flujo estandar de salida
     
 
-        sys.stdout.write(f"{segundaCol}\t {terceraCol}\n")
+        sys.stdout.write(f"{segundaCol}\t{terceraCol}\n")
